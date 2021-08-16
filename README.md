@@ -1,2 +1,0 @@
-# JenkinsDeployment
- CI/CD jenkins
