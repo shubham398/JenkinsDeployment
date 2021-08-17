@@ -13,9 +13,7 @@ pipeline {
             bat 'mvn -B -U -e -V clean -DskipTests package'
 			
       }
-	  steps {
-		properties([parameters([string(defaultValue: 'ANYPOINT', description: 'DEPLOYMENT URL', name: 'ANYPOINT_URI')])])
-	  }
+	  
     }
      stage('Deploy Development') {
       environment {
