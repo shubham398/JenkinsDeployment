@@ -19,7 +19,7 @@ pipeline {
         APP_NAME = ''
       }
       steps {
-             mvn -U -V -e -B -DskipTests deploy -DmuleDeploy -Danypoint.uri="https://anypoint.mulesoft.com" -Dmule.version="4.3.0" -Danypoint.username="shubham06011997" -Danypoint.password="Shubhb@j1997" -Dcloudhub.app="CICDJenkinsTrial" -Dcloudhub.environment="Sandbox" -Dcloudhub.bg="Apisro" -Dcloudhub.worker="Micro" -Dcloudhub.region="us-east-1"'
+             mvn -U -V -e -B -DskipTests deploy -DmuleDeploy -Danypoint.uri="https://anypoint.mulesoft.com" -Dmule.version="4.3.0" -Danypoint.username="shubham06011997" -Danypoint.password="Shubhb@j1997" -Dcloudhub.app="CICDJenkinsTrial" -Dcloudhub.environment="Sandbox" -Dcloudhub.bg="Apisro" -Dcloudhub.worker="Micro" -Dcloudhub.region="us-east-1"
       }
     }
   }
