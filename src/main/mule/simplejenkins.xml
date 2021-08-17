@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="simplejenkinsFlow" doc:id="7dc3493f-24a4-4500-8c55-027cac19dd06" >
-		<http:listener doc:name="Listener" doc:id="4010b31b-ea3b-4961-9074-bf68d3e28a34" config-ref="HTTP_Listener_config" path="/automate"/>
+		<http:listener doc:name="Listener" doc:id="4010b31b-ea3b-4961-9074-bf68d3e28a34" config-ref="HTTP_Listener_config" path="/automate" allowedMethods="GET"/>
 		<set-payload value='#["check jenkins and maven- ci cd"]' doc:name="Set Payload" doc:id="ed3331c1-c8a4-45b2-9693-4e7a3458c226" />
 		<logger level="INFO" doc:name="Logger" doc:id="baaf923a-2123-4242-8c9e-f32644536b50" message="#[payload]"/>
 	</flow>
