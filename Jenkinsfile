@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-            sh 'mvn -B -U -e -V clean -DskipTests package'
+            bat 'mvn -B -U -e -V clean -DskipTests package'
       }
     }
      stage('Deploy Development') {
@@ -19,7 +19,7 @@ pipeline {
         APP_NAME = ''
       }
       steps {
-             sh 'mvn -U -V -e -B -DskipTests deploy -DmuleDeploy -Danypoint.uri="https://anypoint.mulesoft.com" -Dmule.version="4.3.0" -Danypoint.username="shubham06011997" -Danypoint.password="Shubhb@j1997" -Dcloudhub.app="CICDJenkinsTrial" -Dcloudhub.environment="Sandbox" -Dcloudhub.bg="Apisro" -Dcloudhub.worker="Micro" -Dcloudhub.region="us-east-1"'
+             bat 'mvn -U -V -e -B -DskipTests deploy -DmuleDeploy -Danypoint.uri="https://anypoint.mulesoft.com" -Dmule.version="4.3.0" -Danypoint.username="shubham06011997" -Danypoint.password="Shubhb@j1997" -Dcloudhub.app="CICDJenkinsTrial" -Dcloudhub.environment="Sandbox" -Dcloudhub.bg="Apisro" -Dcloudhub.worker="Micro" -Dcloudhub.region="us-east-1"'
       }
     }
   }
