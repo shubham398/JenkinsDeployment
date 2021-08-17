@@ -38,7 +38,7 @@
 						<password>Shubhb@j1997</password>
 						<!-- Environment Parameter -->
 						<environment>Sandbox</environment>
-						<applicationName>CICDJenkinsTrial</applicationName>
+						<applicationName>CICDJenkinsTrial0601</applicationName>
 						<businessGroup>Apisro</businessGroup>
 						<workerType>Micro</workerType>
 						<region>us-east-1</region>
